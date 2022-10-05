@@ -6,7 +6,7 @@
 layout: default
 title: The box model
 parent: CSS study
-nav_order: 2
+nav_order: 3
 ---
 
 # The box model
