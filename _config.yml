@@ -29,10 +29,10 @@ github_username:  donggoon
 
 # Build settings
 # theme: minima
-# theme: just-the-docs
+theme: just-the-docs
 # plugins:
 #   - jekyll-feed
-remote_theme: just-the-docs/just-the-docs
+# remote_theme: just-the-docs/just-the-docs
 
 aut_links:
   "Edit this page on GitHub":
@@ -128,7 +128,7 @@ gh_edit_repository: "https://github.com/donggoon/donggoon.github.io" # the githu
 # gh_edit_view_mode: "tree" # "tree" or "edit" if you want the user to jump into the editor immediately
 
 # Color scheme supports "light" (default) and "dark"
-# color_scheme: dark
+color_scheme: dark
 
 # callouts:
 #   custom:

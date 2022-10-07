@@ -1,4 +1,109 @@
-$pink-000: #f77ef1;
-$pink-100: #f967f1;
-$pink-200: #e94ee1;
-$pink-300: #dd2cd4;
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;900&display=swap");
+
+
+:root {
+  --main-bg-color: #222831;
+  --main-bg-color-rgb: 34, 40, 49;
+  --sub-bg-color: #393E46;
+  --sub-bg-color-rgb: 57, 62, 70;
+  --sub-txt-color: #00ADB5;
+  --main-txt-color: #EEEEEE;
+  --code-bg-color: #302D36;
+  --extra-txt-color: #B4CDE6;
+  --unimportant-txt-color: #576F72;
+}
+
+body {
+	font-family: 'Noto Sans KR', sans-serif;
+  background: var(--main-bg-color);
+  color: var(--main-txt-color);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--main-txt-color);
+}
+
+a {
+  color: var(--sub-txt-color);
+}
+
+.side-bar {
+  background: var(--sub-bg-color);
+}
+
+.site-title {
+    color: var(--main-txt-color);
+}
+
+.site-title:hover {
+  background-image: linear-gradient(-90deg, var(--main-bg-color) 0%, rgba(var(--main-bg-color-rgb), 0.8) 80%, rgba(var(--main-bg-color-rgb), 0) 100%);
+}
+
+.nav-list .nav-list-item .nav-list-link:hover, .nav-list .nav-list-item .nav-list-link.active {
+  background-image: linear-gradient(-90deg, var(--main-bg-color) 0%, rgba(var(--main-bg-color-rgb), 0.8) 80%, rgba(var(--main-bg-color-rgb), 0) 100%);
+}
+
+.nav-list .nav-list-item .nav-list-expander {
+  color: var(--sub-txt-color);
+}
+
+.nav-list .nav-list-item .nav-list-expander:hover {
+  background-image: linear-gradient(-90deg, var(--main-bg-color) 0%, rgba(var(--main-bg-color-rgb), 0.8) 100%);
+}
+
+.nav-list .nav-list-item > .nav-list .nav-list-item .nav-list-link {
+  color: var(--main-txt-color);
+}
+
+.main {
+  background: var(--main-bg-color);
+}
+
+.main-header {
+  background: var(--main-bg-color);
+}
+
+#main-header {
+  background: var(--main-bg-color);
+}
+
+.search-input-wrap {
+  background: var(--main-bg-color);
+}
+
+.search-active .search-input {
+  background: var(--main-bg-color);
+  color: var(--sub-bg-color);
+}
+
+.search-label .search-icon {
+  color: var(--unimportant-txt-color);
+}
+
+.search-input {
+  background: inherit;
+}
+
+.search-results {
+  background: var(--main-bg-color);
+}
+
+.search-result-doc .search-result-icon {
+  color: var(--sub-bg-color);
+}
+
+.search-result-doc .search-result-icon {
+  color: var(--sub-txt-color);
+}
+
+iframe {
+  border: 0px solid #cdcdcd;
+  padding: 0.75rem;
+  margin-top: 0;
+  margin-bottom: 0.75rem;
+  overflow-x: auto;
+  background: var(--code-bg-color);
+  border-radius: 4px;
+  box-shadow: none;
+  -webkit-overflow-scrolling: touch;
+}

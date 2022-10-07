@@ -17,9 +17,9 @@ nav_order: 1
 - 단순한 경우에 CSS 규칙의 순서가 중요
 - 동일한 우선 순위의 두 규칙이 있으면 뒤에 작성된 규칙으로 적용
 
-<iframe width="100%" src="../pages/cascade.html"></iframe>
+<iframe width="100%" src="../../pages/cascade.html"></iframe>
 
-*CSS*
+#### CSS
 ```css
 h1 { 
     color: red; 
@@ -28,7 +28,7 @@ h1 {
     color: blue; 
 }
 ```
-*HTML*
+#### HTML
 ```html
 <h1>This is my heading.</h1>
 ```
@@ -39,9 +39,9 @@ h1 {
 - 우선 순위 점수 : element selector < class selector
 - element selector가 더 뒤에 작성되도 우선 순위가 높으므로 class selector가 적용
 
-<iframe width="100%" src="../pages/specificity.html"></iframe>
+<iframe width="100%" src="../../pages/specificity.html"></iframe>
 
-*CSS*
+#### CSS
 ```css
 .main-heading { 
   color: red; 
@@ -51,7 +51,7 @@ h1 {
 }
 ```
 
-*HTML*
+#### HTML
 ```html
 <h1 class="main-heading">This is my heading.</h1>
 ```
@@ -61,9 +61,9 @@ h1 {
 - 부모 element에 적용된 일부 CSS 속성은 자식 element에 상속
 - 일부 상속되지 않는 경우 있음 (ex. width)
 
-<iframe width="100%" src="../pages/inheritance.html"></iframe>
+<iframe width="100%" src="../../pages/inheritance.html"></iframe>
 
-*CSS*
+#### CSS
 ```css
 .main-heading {
   color: red; 
@@ -73,7 +73,7 @@ h1 {
 }
 ```
 
-*HTML*
+#### HTML
 ```html
 <h1 class="main-heading">This is my heading.</h1>
 ```
@@ -95,7 +95,7 @@ h1 {
     + unset : 사용자 CSS 속성에 설정된 값으로 롤백
     + revert : User agent의 CSS 속성에 설정된 값으로 롤백
   
-  *HTML*
+  #### HTML
   ```html
   <h3 style="font-weight: revert; color: revert;">
     This should have its original font-weight (bold) and color: black
@@ -107,7 +107,7 @@ h1 {
   <p>Just some text</p>
   ```
   
-  *CSS*
+  #### CSS
   ```css
   h3 {
     font-weight: normal;
@@ -115,8 +115,8 @@ h1 {
   }
   ```
   
-  *Output*
-  <iframe width="100%" src="../pages/revert.html"></iframe>
+  #### OUTPUT
+  <iframe width="100%" src="../../pages/revert.html"></iframe>
 
 - revert-layer
   * 이전 layer의 CSS 속성에 설정된 값으로 롤백
@@ -125,3 +125,27 @@ h1 {
 ### Resetting all property values
 - CSS 속성 all 값을 inherit, initial, unset, revert, revert-layer로 지정 가능
 - 대부분의 속성 값을 한 번에 지정하는 효과
+
+#### CSS
+```css
+blockquote {
+  background-color: red;
+  border: 2px solid green;
+}
+.fix-this {
+  all: unset;
+}
+```
+
+#### HTML
+```html
+<blockquote>
+  <p>This blockquote is styled</p>
+</blockquote>
+<blockquote class="fix-this">
+  <p>This blockquote is not styled</p>
+</blockquote>
+```
+
+#### OUTPUT
+<iframe width="100%" src="../../pages/all.html"></iframe>
