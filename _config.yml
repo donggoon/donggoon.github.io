@@ -27,7 +27,7 @@ url: "https://donggoon.github.io" # the base hostname & protocol for your site, 
 github_username:  donggoon
 
 # Build settings
-theme: just-the-docs
+# theme: just-the-docs
 remote_theme: just-the-docs/just-the-docs
 
 aut_links:
