@@ -5,7 +5,8 @@
 # layout: home
 layout: default
 title: Pseudo classes and pseudo elements
-parent: CSS study
+parent: CSS
+grand_parent: 공부노트
 nav_order: 2
 ---
 
@@ -48,4 +49,4 @@ input {
 ```
 
 Output
-<iframe width="100%" src="../../pages/focus-within.html"></iframe>
+<iframe width="100%" src="../../../assets/pages/focus-within.html"></iframe>

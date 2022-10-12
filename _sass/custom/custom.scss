@@ -1,16 +1,20 @@
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;900&display=swap");
-
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;5000&display=swap');
 
 :root {
   --main-bg-color: #222831;
   --main-bg-color-rgb: 34, 40, 49;
-  --sub-bg-color: #393E46;
-  --sub-bg-color-rgb: 57, 62, 70;
-  --sub-txt-color: #00ADB5;
+  --nav-bg-color: #393E46;
+  --nav-bg-color-rgb: 57, 62, 70;
+  --point-txt-color: #00ADB5;
   --main-txt-color: #EEEEEE;
   --code-bg-color: #302D36;
   --extra-txt-color: #B4CDE6;
-  --unimportant-txt-color: #576F72;
+  --dark-txt-color: #576F72;
+  --title-txt-color: #A6E3E9;
+  // --first-txt-color: #71C9CE;
+  // --second-txt-color: #A6E3E9;
+  // --third-txt-color: #CBF1F5;
+  // --fourth-txt-color: #E3FDFD;
 }
 
 body {
@@ -20,15 +24,16 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  color: var(--main-txt-color);
+  color: var(--title-txt-color);
+  font-weight: 300;
 }
 
 a {
-  color: var(--sub-txt-color);
+  color: var(--point-txt-color);
 }
 
 .side-bar {
-  background: var(--sub-bg-color);
+  background: var(--nav-bg-color);
 }
 
 .site-title {
@@ -44,7 +49,7 @@ a {
 }
 
 .nav-list .nav-list-item .nav-list-expander {
-  color: var(--sub-txt-color);
+  color: var(--point-txt-color);
 }
 
 .nav-list .nav-list-item .nav-list-expander:hover {
@@ -52,7 +57,7 @@ a {
 }
 
 .nav-list .nav-list-item > .nav-list .nav-list-item .nav-list-link {
-  color: var(--main-txt-color);
+  color: var(--title-txt-color);
 }
 
 .main {
@@ -73,11 +78,11 @@ a {
 
 .search-active .search-input {
   background: var(--main-bg-color);
-  color: var(--sub-bg-color);
+  color: var(--nav-bg-color);
 }
 
 .search-label .search-icon {
-  color: var(--unimportant-txt-color);
+  color: var(--dark-txt-color);
 }
 
 .search-input {
@@ -89,11 +94,11 @@ a {
 }
 
 .search-result-doc .search-result-icon {
-  color: var(--sub-bg-color);
+  color: var(--nav-bg-color);
 }
 
 .search-result-doc .search-result-icon {
-  color: var(--sub-txt-color);
+  color: var(--point-txt-color);
 }
 
 iframe {

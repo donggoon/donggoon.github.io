@@ -10,5 +10,6 @@ description: "description"
 permalink: /
 ---
 
-[CSS study](docs/css-study){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }[View it on GitHub](https://github.com/donggoon/donggoon.github.io){: .btn .fs-5 .mb-4 .mb-md-0 }
----
+[업무노트](docs/work){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }
+[공부노트](docs/study){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }
+[View it on GitHub](https://github.com/donggoon/donggoon.github.io){: .btn .fs-5 .mb-4 .mb-md-0 }

@@ -5,7 +5,8 @@
 # layout: home
 layout: default
 title: The box model
-parent: CSS study
+parent: CSS
+grand_parent: 공부노트
 nav_order: 3
 ---
 

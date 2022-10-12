@@ -4,10 +4,10 @@
 
 # layout: home
 layout: default
-title: CSS study
-nav_order: 3
+title: 업무노트
+nav_order: 2
 has_children: true
-permalink: /docs/css-study
+permalink: /docs/work
 ---
 
-# CSS study
+# 업무노트

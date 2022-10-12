@@ -5,7 +5,8 @@
 # layout: home
 layout: default
 title: Cascade and inheritance
-parent: CSS study
+parent: CSS
+grand_parent: 공부노트
 nav_order: 1
 ---
 
@@ -17,7 +18,7 @@ nav_order: 1
 - 단순한 경우에 CSS 규칙의 순서가 중요
 - 동일한 우선 순위의 두 규칙이 있으면 뒤에 작성된 규칙으로 적용
 
-<iframe width="100%" src="../../pages/cascade.html"></iframe>
+<iframe width="100%" src="../../../assets/pages/cascade.html"></iframe>
 
 #### CSS
 ```css
@@ -39,7 +40,7 @@ h1 {
 - 우선 순위 점수 : element selector < class selector
 - element selector가 더 뒤에 작성되도 우선 순위가 높으므로 class selector가 적용
 
-<iframe width="100%" src="../../pages/specificity.html"></iframe>
+<iframe width="100%" src="../../../assets/pages/specificity.html"></iframe>
 
 #### CSS
 ```css
@@ -61,7 +62,7 @@ h1 {
 - 부모 element에 적용된 일부 CSS 속성은 자식 element에 상속
 - 일부 상속되지 않는 경우 있음 (ex. width)
 
-<iframe width="100%" src="../../pages/inheritance.html"></iframe>
+<iframe width="100%" src="../../../assets/pages/inheritance.html"></iframe>
 
 #### CSS
 ```css
@@ -116,7 +117,7 @@ h1 {
   ```
   
   #### OUTPUT
-  <iframe width="100%" src="../../pages/revert.html"></iframe>
+  <iframe width="100%" src="../../../assets/pages/revert.html"></iframe>
 
 - revert-layer
   * 이전 layer의 CSS 속성에 설정된 값으로 롤백
@@ -148,4 +149,4 @@ blockquote {
 ```
 
 #### OUTPUT
-<iframe width="100%" src="../../pages/all.html"></iframe>
+<iframe width="100%" src="../../../assets/pages/all.html"></iframe>
